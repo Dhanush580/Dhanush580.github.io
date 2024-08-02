@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inconsolata:wght@200..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inconsolata:wght@200..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color:black;
+}
+
+span{
+    color: red;
+}
+.my-image{
+    height: 50vh;
+    border-radius: 30px;
+}
+.text-container{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.height{
+    height: 90vh;
+}
+.percentage{
+    border-radius: 10px;
+    height: 5px;
+    width: 200PX;
+    background-color:red;
+}
+.skill-image{
+    height: 20vh;
+}
+.skill{
+    width: 100%;
+    border-radius: 20px;
+}
+.text-percentage{
+    text-align: right;
+}
+.percentage1{
+    height: 5px;
+    width: 170PX;
+    background-color:red;
+}
+.percentage2{
+    height: 5px;
+    width: 140PX;
+    background-color:red;
+}
+.percentage3{
+    height: 5px;
+    width: 179PX;
+    background-color:red;
+}
+.percentage4{
+    height: 5px;
+    width: 160PX;
+    background-color:red;
+}
+.percentage5{
+    height: 5px;
+    width: 140PX;
+    background-color:red;
+}
+.icon{
+    height: 30px;
+    margin-right: 10px;
+}
+.contact-section a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.about-image{
+    border-radius: 30px;
+    height: 40vh;
+    width: 100%;
+}
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.heading-container{
+    height: 20vh;
+}
+.edu-au-vic-wa-nt-hand-info {
+        font-family: "Edu AU VIC WA NT Hand", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+}
+.inconsolata-para {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 30px;
+  }
+.about-me-heading{
+    text-align: center;
+    padding-top: 20px;
+}
+.mukta-medium {
+    font-size: 20px;
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+.my-skills-heading{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.about-me-container{
+    border-radius: 30px;
+}
+.social-media-heading{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.links-container a{
+    color: white;
+    text-decoration: none;
+}
+.navbar-nav .nav-link {
+    color: white !important;
+}
+.dancing-script-title {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 30px;
+    font-style: normal;
+  }
+.navbar-toggler-icon{
+    color: white;
+  }
+  .navbar-toggler-icon{
+    color: white;
+  }
+.home{
+    margin-top:80px ;
+}
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+
+body {
+    font-family: 'Mukta', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-family: 'Mukta', sans-serif;
+}
+
+.home h1 {
+    font-size: 40px;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+.edu-au-vic-wa-nt-hand-info {
+    color:red;
+    animation: colorChange 3s infinite;
+}
+
+.about-me-heading, .my-skills-heading, .social-media-heading {
+    font-size: 2.5rem;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.name {
+    color: #e74c3c;
+    font-weight: bold;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+.inconsolata-para, .mukta-medium, .text-percentage {
+    font-family: 'Inconsolata', monospace;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #f39c12;
+    }
+    50% {
+        color: #8e44ad;
+    }
+    100% {
+        color: #f39c12;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
