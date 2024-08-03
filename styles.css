@@ -269,3 +269,22 @@ body {
         opacity: 1;
     }
 }
+
+.project-image{
+    height: 40vh;
+    margin: 0%;
+}
+.project-heading{
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inconsolata:wght@200..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.ubuntu-bold{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration:underline red;
+    font-style: normal;
+  }
