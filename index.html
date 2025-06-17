@@ -8,14 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="background">
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navd">
             <div class="container-fluid">
-              <a class="navbar-brand setting " href="#">Dhanush Pekala</a>
+              <a class="navbar-brand setting " id="myname" href="#">Dhanush Pekala</a>
               <button class="navbar-toggler buttoncol" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -41,32 +39,37 @@
             </div>
           </nav>
           <main>
-            <div class="container-fluid mb-3" id="hero-section">
+            <div class="container-fluid" id="hero-section">
               <div class="row">
                 <div class="col-12 hero-section d-flex flex-column justify-content-center align-items-start p-5">
                   <h1 class="main-heading">Hi There!</h1>
                   <h3 class="sub-heading">Welcome to My Portfolio</h3>
                   <p class="info">I'm <span class="name">Dhanush Pekala</span>, a passionate web developer.</p>
                     <button class="btn btn-danger p-3">Download My Resume</button>
+                  <div class="bt-cont mt-3">
+                    <p class="data mb-3">view protfolio in:</p>
+                    <button class="btn mode-but mt-0" onclick="lightmode()"><i class="fa-solid fa-sun"></i> light mode</button>
+                    <button class="btn mode-but mt-0"><i class="fa-solid fa-moon" onclick="darkmode()"></i> dark mode</button>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="container-fluid abtme p-3" id="aboutme">
-              <h1 class="am-head">About Me</h1>
+            <div class="container p-3 mt-5" id="aboutme">
+              <h1 class="am-head" id="cont-heading">About Me</h1>
               <div class="row mt-3 mb-3 flex-row justify-content-center
                 align-items-center">
-                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-end">
+                <div class="col-12 col-md-4 mb-3 d-flex flex-column justify-content-center align-items-center">
                   <img src="images/1740407978573.jpg" class="img-fluid abimg">
                 </div>
-                <div class="col-12 col-md-7 d-flex
+                <div class="col-12 col-md-7 d-flex mr-2
                 flex-column justify-content-center align-items-center">
-                  <div class="abtxt">
+                  <div class="abtxt" id="abtmetext">
                     Hi, I'm Veera Dhanush Kumar Pekala, a passionate learner on the journey to becoming a Full Stack Web Developer.I specialize in HTML, CSS, JavaScript, React, Node.js, and MongoDB, building dynamic and responsive web applications from scratch.With a quick learning attitude and a detail-oriented approach, I love bringing ideas to life through clean, efficient, and user-friendly code.Right now, I'm focused on building full-stack projects that solve real-world problems and sharpen my skills even further.When I'm not coding, you'll probably find me gaming or watching cricket — two things that keep my spirit energized and competitive!I'm excited about where this journey is taking me and always open to new opportunities, collaborations, and challenges.
                   </div>
                 </div>
               </div>
               <div class="row d-flex flex-column justify-content-center align-items-center">
-                <h1 class="am-head">My Educational Details</h1>
+                <h1 class="am-head" id="cont-heading">My Educational Details</h1>
                 <div class="col-12 col-md-10">
                   <table class="table table-striped table-dark">
                     <thead>
@@ -101,7 +104,7 @@
                 </div>
               </div>
             </div>
-            <div class="container-fluid  p-3 bg-black" id="skills">
+            <div class="container p-3 mt-5 mb-5" id="skills">
               <h1 class="am-head">My Skills</h1>
               <div class="row d-flex flex-row justify-content-center align-items-center">
                 <div class="col-md-2 col-6">
@@ -146,7 +149,6 @@
                   justify-content-center align-items-center">
                     <img src="images/Reactlogo.png" class="skillimg">
                     <p class="skillname">REACT JS</p>
-                    </p>
                   </div>
                 </div>
                 <div class="col-md-2 col-6">
@@ -179,24 +181,24 @@
                 </div>
               </div>
             </div>
-            <div class="container-fluid" id="projects">
+            <div class="container" id="projects">
               <h1 class="am-head">My Projects</h1>
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <div class="pr-cont bg-dark d-flex flex-column justify-content-center align-items-center p-5 rounded-5">
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-12 col-md-6 col-lg-6">
+                  <div class="pr-cont bg-dark d-flex flex-column justify-content-center align-items-center p-5 rounded-5" id="pr1">
                     <h1 class="skillname">Job Board Application</h1>
                     <p class="abtxt">A full-stack job board application designed to connect employers with job seekers. Users can create accounts, browse job listings, and apply for positions. The platform also allows employers to post job openings and manage applications. Built with modern technologies such as React, Node.js, and MySQL, Express.js this application provides an intuitive interface and seamless user experience.</p>
                     <a class="btn btn-danger" href="github.com">View project in Github</a>
                   </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <!-- <div class="col-12 col-md-6">
                   <div class="pr-cont bg-dark d-flex flex-column justify-content-center align-items-center p-5 rounded-5">
                     <h1 class="skillname">More on the way!</h1>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
-            <div class="container-fluid mt-5">
+            <div class="container-fluid mt-5" id="Certifications">
               <h1 class="am-head">My Certifications</h1>
               <div class="row d-flex flex-row justify-content-center align-items-center">
                 <div class="col-6 col-md-3">
@@ -242,7 +244,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="hold d-flex flex-column justify-content-center align-items-center pt-3 pb-3 rounded-5 bg-dark">
+                  <div class="hold d-flex flex-column justify-content-center align-items-center  rounded-5 bg-dark">
                     <p class="cert-name"> Git and Github cetificate from infosys springboard</p>
                     <a href="images/gitandgithub.pdf" class="btn btn-success">View Certificate</a>
                   </div>
@@ -267,10 +269,10 @@
                   <div class="holder d-flex flex-column justify-content-center align-items-center">
                     <h3 class="skillname">Social Media links</h3>
                     <div class="links d-flex flex-column justify-content-start">
-                        <a href=""><img src="images/instagram.png"  class="smlink" alt="instagram logo">dhanush_pekala</a>
-                        <a href=""><img src="images/facebook.png" class="smlink" alt="instagram logo">Dhanush Pekala</a>
-                        <a href="https://www.linkedin.com/in/dhanush-pekala-a531b52b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><img src="images/linkedin.png" class="smlink" alt="linkedinlogo logo">Dhanush Pekala</a>
-                        <a href=""><i class="fa-brands fa-github"></i>Dhanush580</a>
+                        <a href="https://www.instagram.com/dhanush_pekala/" class="hef"><img src="images/instagram.png"  class="smlink" alt="instagram logo">dhanush_pekala</a>
+                        <a href="www.facebook.com" class="hef"><img src="images/facebook.png" class="smlink" alt="instagram logo">Dhanush Pekala</a>
+                        <a href="https://www.linkedin.com/in/dhanush-pekala-a531b52b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="hef"><img src="images/linkedin.png" class="smlink" alt="linkedinlogo logo">Dhanush Pekala</a>
+                        <a href="https://github.com/dhanush580" class="hef"><i class="fa-brands fa-github"></i>Dhanush580</a>
                     </div>
                   </div>
                 </div>
@@ -285,5 +287,6 @@
               </div>
             </div>
           </main>
+          <script src="script.js"></script>
 </body>
 </html>

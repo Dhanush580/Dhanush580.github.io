@@ -1,0 +1,35 @@
+let navbar=document.getElementById("navd");
+let navlinks=document.getElementsByClassName("nav-link");
+let headings=document.getElementsByClassName("am-head");
+let skillnames=document.getElementsByClassName("skillname");
+function lightmode(){
+    navbar.style.backgroundColor = "white";
+    document.body.style.backgroundColor = "white";
+    navlinks[0].style.color = "black";
+    navlinks[1].style.color = "black";
+    navlinks[2].style.color = "black";
+    navlinks[3].style.color = "black";
+    navlinks[4].style.color = "black";
+    document.getElementById("myname").style.color = "black";
+    navbar.classList.add("new");
+    document.getElementById("aboutme").classList.add("abtme");
+    headings[0].style.color = "black";
+    headings[1].style.color = "black";
+    headings[2].style.color = "black";
+    headings[3].style.color = "black";
+    headings[4].style.color = "black";
+    headings[5].style.color = "black";
+    document.getElementById("abtmetext").style.color = "black";
+    document.getElementById("skills").classList.add("skills");
+    skillnames[0].style.color = "black";
+    skillnames[1].style.color = "black";
+    skillnames[2].style.color = "black";
+    skillnames[3].style.color = "black";
+    skillnames[4].style.color = "black";
+    skillnames[5].style.color = "black";
+    skillnames[6].style.color = "black";
+    skillnames[7].style.color = "black";
+    skillnames[8].style.color = "black";
+    skillnames[9].style.color = "black";
+    document.getElementById("pr1").classList.add("pr-cont");
+}
